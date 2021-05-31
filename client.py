@@ -20,9 +20,9 @@ def on_open(ws):
             time.sleep(1)
             ws.send("Hello %d" % i)
         time.sleep(1)
-        ws.close()
-        print("thread terminating...")
-    thread.start_new_thread(run, ())
+    
+    
+    
 
 if __name__ == "__main__":
     websocket.enableTrace(True)
